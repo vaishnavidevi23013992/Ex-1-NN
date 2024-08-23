@@ -37,48 +37,59 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-```import pandas as pd
+```
+Developed by: VAISHNAVIDEVI V
+RegisterNumber: 212223040230
+
+import pandas as pd
 import io
 from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
-df=pd.read_csv('Churn_Modelling.csv')
-print(df)
-df.head()
-df.tail()
-df.columns
+#Reading the dataset
+df=pd.read_csv("/content/Churn_Modelling.csv", index_col="RowNumber")
+df
+#Dropping the unwanted Columns
+df.drop(['CustomerId'],axis=1,inplace=True)
+df.drop(['Surname'],axis=1,inplace=True)
+df.drop('Age',axis=1,inplace=True)
+df.drop('Geography',axis=1,inplace=True)
+df.drop('Gender',axis=1,inplace=True)
+df
+#Checking for null values
 df.isnull().sum()
+#Checking for duplicate values
 df.duplicated()
+#Describing the dataset
 df.describe()
-data = df.drop(['Surname', 'Geography','Gender'], axis=1)
-data.head()
-scaler=MinMaxScaler()
-df1=pd.DataFrame(scaler.fit_transform(data))
-print(df1)
-X=df.iloc[:,:-1].values
-y=df.iloc[:,-1].values
-print(X)
-print(y)
-X_train ,X_test ,y_train,y_test=train_test_split(X,y,test_size=0.2)
-print("X_train\n")
-print(X_train)
-print("\nLenght of X_train ",len(X_train))
-print("\nX_test\n")
-print(X_test)
-print("\nLenght of X_test ",len(X_test))
+#Scaling the dataset
+scaler=StandardScaler()
+df1=pd.DataFrame(scaler.fit_transform(df))
+df1
+#Allocating X and Y attributes
+x=df1.iloc[:,:-1].values
+x
+y=df1.iloc[:,-1].values
+y
+#Splitting the data into training and testing dataset
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
+print(x_train)
+print(len(x_train))
+print(x_test)
+print(len(x_test))
 ```
-
-
 ## OUTPUT:
 <h2>Dataset</h2>
-
-![image](https://github.com/user-attachments/assets/39aee325-b1f6-480d-b3b5-ac2b8667a885)
-<h2>Null values</h2>
+![image](https://github.com/user-attachments/assets/9d4f3d5b-beca-4669-8799-644228273c60)
 
 
-![image](https://github.com/user-attachments/assets/b1366b53-b879-4c23-a8ed-fffc5dd47e71)
-<h2>Data after applying Min Max Scaling</h2>
-![image](https://github.com/user-attachments/assets/337e5e79-b124-4b3b-a465-18c03fe73b70)
+<h2>DROPPING THE UNWANTED DATASET</h2>
+
+![image](https://github.com/user-attachments/assets/2c860088-1306-4431-b1b7-2778376aff1b)
+
+<h2>CHECKING NULL VALUES</h2>
+![image](https://github.com/user-attachments/assets/90f084a9-8552-480d-9877-a6ab6bf0854f)
+<h2>CHECKING FOR DUPICATION</h2>
+![image](https://github.com/user-attachments/assets/fdeaa890-4002-4bef-bb95-0eff27814426)
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
