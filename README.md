@@ -1,5 +1,5 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>NAME:VAISHNAVIDEVI V</H3>
+<H3>REGISTER NO:212223040230</H3>
 <H3>EX. NO.1</H3>
 <H3>DATE</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
@@ -37,12 +37,46 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
+```import pandas as pd
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+df=pd.read_csv('Churn_Modelling.csv')
+print(df)
+df.head()
+df.tail()
+df.columns
+df.isnull().sum()
+df.duplicated()
+df.describe()
+data = df.drop(['Surname', 'Geography','Gender'], axis=1)
+data.head()
+scaler=MinMaxScaler()
+df1=pd.DataFrame(scaler.fit_transform(data))
+print(df1)
+X=df.iloc[:,:-1].values
+y=df.iloc[:,-1].values
+print(X)
+print(y)
+X_train ,X_test ,y_train,y_test=train_test_split(X,y,test_size=0.2)
+print("X_train\n")
+print(X_train)
+print("\nLenght of X_train ",len(X_train))
+print("\nX_test\n")
+print(X_test)
+print("\nLenght of X_test ",len(X_test))
+```
 
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+<h2>Dataset</h2>
 
+![image](https://github.com/user-attachments/assets/39aee325-b1f6-480d-b3b5-ac2b8667a885)
+<h2>Null values</h2>
+![image](https://github.com/user-attachments/assets/f340394e-21cd-4866-9fda-a8148d906370)
+<h2>Duplicate Values:</h2>
+![image](https://github.com/user-attachments/assets/3069846f-7dbf-42c6-982f-cc3dd952386d)
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
