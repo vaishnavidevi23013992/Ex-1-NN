@@ -79,17 +79,12 @@ print(len(x_test))
 ```
 ## OUTPUT:
 <h2>Dataset</h2>
-![image](https://github.com/user-attachments/assets/9d4f3d5b-beca-4669-8799-644228273c60)
-
 
 <h2>DROPPING THE UNWANTED DATASET</h2>
 
 ![image](https://github.com/user-attachments/assets/2c860088-1306-4431-b1b7-2778376aff1b)
 
 <h2>CHECKING NULL VALUES</h2>
-![image](https://github.com/user-attachments/assets/90f084a9-8552-480d-9877-a6ab6bf0854f)
-<h2>CHECKING FOR DUPICATION</h2>
-![image](https://github.com/user-attachments/assets/fdeaa890-4002-4bef-bb95-0eff27814426)
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
