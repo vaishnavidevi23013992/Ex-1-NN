@@ -74,8 +74,7 @@ print("\nLenght of X_test ",len(X_test))
 
 ![image](https://github.com/user-attachments/assets/39aee325-b1f6-480d-b3b5-ac2b8667a885)
 <h2>Null values</h2>
-![image](https://github.com/user-attachments/assets/3dcdfe19-20cf-45ec-97d8-4b66c920ae7f)
-<h2>Duplicate values</h2>
+
 
 ![image](https://github.com/user-attachments/assets/b1366b53-b879-4c23-a8ed-fffc5dd47e71)
 <h2>Data after applying Min Max Scaling</h2>
