@@ -78,13 +78,41 @@ print(x_test)
 print(len(x_test))
 ```
 ## OUTPUT:
-<h2>Dataset</h2>
+<h2>DATASET:</h2>
 
-<h2>DROPPING THE UNWANTED DATASET</h2>
+
+   ![image](https://github.com/user-attachments/assets/8d07f755-b826-4075-8731-44d75fa563c9)
+
+<h2>DROPPING THE UNWANTED DATASET:</h2>
 
 ![image](https://github.com/user-attachments/assets/2c860088-1306-4431-b1b7-2778376aff1b)
 
-<h2>CHECKING NULL VALUES</h2>
+<h2>CHECKING NULL VALUES:</h2>
+
+ ![image](https://github.com/user-attachments/assets/1104f6c0-a5ae-4790-bed8-c73cfa253424)
+
+<h2> CHECKING FOR DUPICATION:</h2>
+
+![image](https://github.com/user-attachments/assets/94d57958-a19d-472c-97b6-a3aea9e12102)
+<h2>DESCRIBING THE DATASET:</h2>
+
+![image](https://github.com/user-attachments/assets/0324e424-d3c1-4eae-aa08-bb56082fa2b3)
+
+<h2>SCALING THE DATASET:</h2>
+
+![image](https://github.com/user-attachments/assets/6d0031b1-0302-4b63-b39b-f94c243e10f3)
+
+<h2>X FEATURES:</h2>
+
+![image](https://github.com/user-attachments/assets/4742516f-831c-4603-b1b2-67878017dd6b)
+
+<h2>Y FEATURES:</h2>
+
+![image](https://github.com/user-attachments/assets/5fac48a6-ff08-4e23-9e97-6b0f6243771c)
+
+<h2> SPLLITING THE TRAINING AND TESTING DATASET:</h2>
+
+![image](https://github.com/user-attachments/assets/358071a3-9d93-4935-bcce-4a60087b7648)
 
 ## RESULT:
 Thus, Implementation of Data Preprocessing is done in python  using a data set downloaded from Kaggle.
